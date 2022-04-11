@@ -1,0 +1,15 @@
+- class="container"
+    * class="row-1", id="display-logo-row"
+        -class="col-10", id="name-logo-placeholder"
+    * class="row-2", id="user-input-row"
+        -class="col-8", id="search-bar-placeholder"
+        -class="col-4", id="search-button-placeholder"
+    * class="row-3" ,id="api-output-row" 
+        -class="col-4" id="location-placeholder"
+        -class="col-4", id="weather-placeholder"
+        -class="col-4", id="second-api-output-placeholder"
+        -TBD
+        -TBD
+    * class-"row-4", id="footer"
+        -class="col-6", id="team-information"
+        -class="col-6", id="optional-tbd"
