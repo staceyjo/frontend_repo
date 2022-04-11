@@ -1,1 +1,19 @@
+Frontend Project Outline: 
+- https://digitalcrafts.instructure.com/courses/188/pages/lecture-front-end-project-kickoff?module_item_id=22645
 
+Frontend Project Details: 
+- Create a web app that allows you to check the weather in different cities dynamically… meaning I should be able to input some info and receive details back from the API. 
+- The API to use can be found here: https://www.weatherapi.com/
+- There should be a default city that displays its weather.
+- Once you complete the base requirements, find another API to incorporate as well. Which API and how it integrates is up to you.
+- Additional API resources and libraries can be found here: https://digitalcrafts.instructure.com/courses/188/pages/resources-for-projects-libraries-and-apis?module_item_id=22654
+
+RESOURCE #1:
+
+weatherapi.comweatherapi.com
+Free Weather API - WeatherAPI.com
+WeatherAPI.com offers free weather API and weather data and Geolocation API (JSON and XML) for hourly weather, historical data, astronomy, sports and much more
+
+RESOURCE #2: 
+Questions about the Agile/Project Management Process:
+https://digitalcrafts.instructure.com/courses/188/pages/reading-project-management-101?module_item_id=22643
