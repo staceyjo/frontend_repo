@@ -1,4 +1,8 @@
 
-
 API Key for weather api
 b38cc93161464a2ab2e173922221104 
+
+API Key for OpenCage Geocoding API
+b93bcf8b7f6b4522891b9d4837013047
+
+
