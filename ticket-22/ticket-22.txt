@@ -1,0 +1,14 @@
+------------------------------------Gabriel Jefferson Stand-Up for 04/13/22----------------------------------------
+1. What I did yesterday:
+    * Created a function to take in user input of a valid city or zipcode, and return data endpoints.
+    * Made some minor modifications to the html.
+    * Created a second fetch in both functions to retrieve daily forcast data for a given city.
+2. What I'm doing today:
+    * Adding folder of icons to the local machine. 
+    * Creating additional conditionals within both functions to manage edge cases from user-input.
+    * Adding addition functionality to catch methods at the end of each fetch.
+    * Formatting row 2, column 2 to accept other weather data
+    * Assisting with any html/css issues that may be present. 
+    * Assisting with 2nd api repairs or alternatives.
+3. Blockers: 
+    * Api wouldn't give me access to 7-Day forcast data.
