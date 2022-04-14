@@ -1,0 +1,15 @@
+--------------------------04/14/22-------------------------------
+Gabriel Jefferson 9:15am Stand-up: 
+-----------------------------------
+1. What I did Yesterday:
+    * Successfully embedded map from out second api into our application
+2. What I'm Doing Today
+    * Finishing up any of items that didn't get finished Yesterday
+        - linking the weather icons
+        - formatting the daily forcast block
+        - getting .gitignore file with api keys filled 
+        - creating conditionals for the edge cases in user input
+    * Assisting with any html/css issues
+    * Extending map api functionality to the search bar
+3. Blockers 
+    * Weather overlay layer for second api is restricted with my current api. 
