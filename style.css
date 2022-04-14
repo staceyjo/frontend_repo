@@ -35,6 +35,7 @@ heading{
     border: 3px solid blue;
     height: 137px;
     background-color: white;
+    text-align: center;
 
 }
 
@@ -55,12 +56,13 @@ heading{
 #search-button-placeholder{
     /* border: 3px solid blue; */
     height: 30px;
+    cursor: pointer;
 }
 
 /* ---------------------------API Output----------------------------- */
 .row-3{
-    background-color: white;
-    border: 5px solid red;
+    background-color:black;
+    border: 5px solid black;
     height: 43%;
     display: flex;
     justify-content: center;
@@ -78,6 +80,7 @@ heading{
     align-items: center;
     padding: 5px;
     border-radius: 30px;
+    background-color: white;
 }
 
 #condition-icon{
@@ -90,18 +93,20 @@ heading{
     border: 3px solid blue;
     height: 384px;
     border-radius: 30px;
+    background-color: white;
 }
 
 #second-api-output-placeholder{
     border: 3px solid blue;
     height: 384px;
     border-radius: 30px;
+    background-color: white;
 }
 /* ---------------------------Footer---------------------------- */
 
 .row-4{
     background-color: whitesmoke;
-    border: 5px solid red;
+    border: 5px solid black;
     height: 189px;
     border-radius: 30px;
 }
