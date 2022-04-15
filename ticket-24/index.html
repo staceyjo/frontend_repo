@@ -30,7 +30,7 @@
             <div class="col-8" input="text" id="search-bar-placeholder">
                 <!-- Search Bar Goes Here -->
                 <div id="do-not-disturb" class="mb-3">
-                    <input type="search" class="form-control" id="search-input" value="">
+                    <input type="search" class="form-control" id="search-input" value="" placeholder="Enter Valid City or Zipcode">
                   </div>
                 </div>
             <div class="col-4" id="search-button-placeholder">
@@ -39,18 +39,41 @@
             </div>
         </div>
         <div class="row-3" id="api-output-row">
+            <!-- :::::::::::::::::::::::::::::::::ROW 3 COLUMN ::::::::::::::::::::::::::::::::::::::::: -->
             <div class="col-4" id="location-placeholder">
 
-              <h2 id="city">City</h2>
-              <h5 id="date-time">Date and Time</h5>
-              <h1 id="temperature">Tmp</h1>
-              <img id="condition-icon" src="" alt="condition icon">
+              <!-- Holds the City, State, & Date/Time of Given City -->
+              <div id="city-block">
+                <h2 id="city">City</h2>
+                <h6 id="state-region">State/Region</h6>
+                <h5 id="date-time">Date and Time</h5>
+              </div>
+              <!-- Holds Current Temperature of the Given City -->
+              <div id="temp-block">
+                <h1 id="temperature">Tmp</h1>
+              </div>
+              <!-- Displays the icon corresponding to the current weather of the given city -->
+              <div id="weather-icon-block">
+                <img id="condition-icon" src=" " alt="condition icon">
+              </div>
 
             </div>
+            <!-- :::::::::::::::::::::::::::::::::ROW 3 COLUMN 2::::::::::::::::::::::::::::::::::::::::: -->
             <div class="col-4" id="weather-placeholder">
+              <div class="weather-placeholder-level2">
+                <h5 id="forecast-high">f-high</h5><br>
+                <h5 id="forecast-low">f-low</h5><br>
+                <h5 id="forecast-avg">f-avg</h5><br>
+                <h5 id="chance-of-rain">chance-rain</h5><br>
+                <h5 id="total-precip-in">inches-rain</h5><br>
+                <h5 id="max-wind">wind-speed</h5>
+              </div>
+
+
             </div>
-            <div class="col-4" id="second-api-output-placeholder">
-              <!-- Trimble Map Goes Here -->
+            <!-- :::::::::::::::::::::::::::::::::ROW 3 COLUMN 3::::::::::::::::::::::::::::::::::::::::: -->
+            <div class="col-4" id="output-window-3">
+              <!-- Trimble Map 1 Goes Here -->
               <div id="myMap" style="height: 377.99px; width: 444px;"></div>
               <!-- Trimble Maps Weather Controls Go Here -->
               <div id="menu">
@@ -58,6 +81,7 @@
                 <label for="weather_radar">radar</label>
                 <input id="weather_cloud" type="radio" name="rtoggle" value="weather_cloud"/>
                 <label for="weather_cloud">clouds</label>
+                <!-- NOTE (04/14/22): User access restricted from weather overlay due to trial status -->
             </div>
             </div>
         </div>
