@@ -1,0 +1,137 @@
+/* A combination of ticket 24 and style.css code- with additional updates*/
+
+/* This is the background image */
+body{
+    background-image:url("https://images.pexels.com/photos/531756/pexels-photo-531756.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2");
+}
+
+/* This is the first container that encapsulates the entire page as a border */
+.container-fluid{
+    border: 10px solid black; 
+    height: 122vh;
+    width: 100%;
+    padding: 14px;
+}
+
+/* This is the first row contained within the header */
+.row-1{
+    background-color: black;
+    border:5px solid red;
+    height: 189px;
+    display: flex; 
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+
+/* This is the header text and logo contained within the first row */
+.heading{
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 50px;
+    font-weight: bold;
+    justify-content: center;
+    color: black
+}
+
+.name-logo-placeholder{
+    border: 3px solid blue;
+    height: 137px;
+    background-color: white;
+}
+
+/* This is  for the user input text field */
+.row-2{
+    border: 5px solid red;
+    height: 151px; 
+    display: flex;
+    justify-content: center; 
+    align-items: center;
+    padding: 57px;
+}
+
+.search-button-paceholder{
+    border: 3px solid blue;
+    height: 30px;
+}
+
+/* This is the API Output */
+
+.row-3{
+    background-color: white;
+    border: 5px solid red;
+    height: 43%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 17px;
+    border-radius: 30px;
+}
+
+.location-placeholder {
+    border: 3px solid blue;
+    height: 384px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 5px;
+    border-radius: 30px;
+}
+
+.condition-icon{
+    height: 64px;
+    width: 64px;
+    border: 3px solid green
+}
+
+.weather-placeholder{
+    border:3px solid blue;
+    height: 384px;
+    border-radius: 30px;
+}
+
+.second-api-output-placeholder{
+    border: 3px solid blue;
+    height: 384px;
+}
+
+/* This is the Trimble Map and all of it's components */
+.trimblemaps-canary{
+    visibility: visible;
+    width: 443.33px;
+    height: 378px;
+    position: fixed;
+}
+
+.menu{
+    position: absolute;
+    background: #fff;
+    padding: 10px;
+    font-family: 'Open Sans', sans-serif;
+}
+
+/* This is the footer */
+.row-4{
+    background-color: whitesmoke;
+    border: 5px solid red;
+    height: 189px;
+    border-radius: 30px;
+}
+
+.team-info{
+    border: 3px solid blue;
+    height: 30 px;
+}
+
+.tbd{
+    border: 3px solid blue;
+    height: 30px;
+}
+
+/* End of the container */
+
+
+
+
+
+
