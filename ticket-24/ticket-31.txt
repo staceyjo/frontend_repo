@@ -1,0 +1,13 @@
+--------------------------04/15/22-------------------------------
+Gabriel Jefferson 9:15am Stand-up: 
+-----------------------------------
+1. What I did yesterday:
+    * Successfully linked weather icons on local machine to application.
+    * Successfully created breakpoints for mobile and tablet.
+2. What I'm doing Today:
+    * Assiting with linking updated css to updated javascript 
+    * Assiting with cleaning up css for final product presentation.
+3. Blockers
+    * Weather overlay for second api is still non-responsive due to trial period 
+    restrictions on api key.
+    * Media queries transition by way of only one window not finished

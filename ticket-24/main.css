@@ -1,8 +1,10 @@
+/* ::::::::::::::::::::::::::FOR DESKTOP::::::::::::::::::::::::::::::::::: */
+
 /* NOTE: Current red and blue bordering is temporary */
 /* ---------------------------Container Start----------------------------- */
 .container-fluid{
     border: 10px solid black;
-    height: 122vh;
+    height: fit-content;
     width: 100%;
     padding: 14px;
 }
@@ -55,26 +57,65 @@
     border: 3px solid blue;
     height: 384px;
     display: flex;
-    flex-direction: column;
+    /* flex-direction: column; */
     /* justify-content: center; */
-    align-items: center;
+    /* align-items: center; */
     padding: 5px;
+    flex-wrap: wrap;
+}
+/* What's Inside the Location placeholder */
+
+#city-block{
+    border: 2px solid orange;
+    height: 147px;
+    width: 432px;
+    padding-left: 44px;
+
+}
+#temp-block{
+    border: 2px solid orange;
+    height: 196px;
+    width: 230.4px;
+    margin-right: 21px;
+    margin-left: 8px;
+
+    /* To Center the temperature in the block */
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
-#condition-icon{
+
+#weather-icon-block{
+    border: 2px solid orange;
+    height: 111px;
+    width: 165.5px;
+
+    /* To Center The Icon In the Middle of the Block */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+/* #condition-icon{
     height: 64px;
     width: 64px;
-    border: 3px solid green;
-}
+} */
 
 #weather-placeholder{
     border: 3px solid blue;
     height: 384px;
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
-#second-api-output-placeholder{
+#output-window-3{
     border: 3px solid blue;
     height: 384px;
+
+    display: flex;
+    flex-wrap: wrap;
 }
 
 /* ---------------------Trimble Maps Components------------------ */
@@ -86,12 +127,19 @@
     position: fixed;
 }
 
+#myMap{
+    height: 260px; 
+    width: 468px;
+}
+
 #menu {
     position: absolute;
     background: #fff;
     padding: 10px;
     font-family: 'Open Sans', sans-serif;
 }
+
+
 /* ---------------------------Footer---------------------------- */
 
 .row-4{
@@ -110,6 +158,98 @@
 }
 /* ---------------------------Container End----------------------------- */
 
+/* ::::::::::::::::::::::::::FOR TABLET::::::::::::::::::::::::::::::::::: */
+
+@media (min-width: 551px) and (max-width: 1189px) {
+     
+    .container-fluid{
+        border: 10px solid green;
+    }
+
+    #output-window-3{
+        border: 3px solid black;
+        width: 400px;
+        height: 384px;
+        /* height: fit-content; */
+        display: flex;
+        flex-wrap: wrap;
+
+    }
 
 
+    #myMap{
+        height: 260px; 
+        width: 468px;
+    }
+
+    #location-placeholder{
+        border: 3px solid blue;
+        height: 384px;
+        display: flex;
+        /* flex-direction: column; */
+        /* justify-content: center; */
+        /* align-items: center; */
+        padding: 5px;
+        flex-wrap: wrap;
+        position: static;
+    }
+
+
+    #temp-block{
+        border: 2px solid orange;
+        height: 196px;
+        width: 154.4px;
+        margin-right: 21px;
+        margin-left: 8px;
+    
+        /* To Center the temperature in the block */
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+
+ }
+
+/* ::::::::::::::::::::::::::FOR MOBILE PHONE::::::::::::::::::::::::::::::::::: */
+
+
+@media (max-width: 550px){
+    .container-fluid{
+        border: 10px solid blue;
+    }
+    .row-3{
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    #location-placeholder{
+        border: 3px solid black;
+        width: 474px;
+        /* height: 138px; */
+        height: fit-content;
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    #weather-placeholder{
+        border: 3px solid black;
+        width: 474px;
+        /* height: 138px; */
+        height: fit-content;
+        display: flex;
+        flex-wrap: wrap;
+
+    }
+
+    #output-window-3{
+        border: 3px solid black;
+        width: 474px;
+        /* height: 138px; */
+        height: fit-content;
+        display: flex;
+        flex-wrap: wrap;
+
+    }
+}
 
