@@ -49,8 +49,10 @@ let chanceOfRain = document.querySelector('#chance-of-rain');
 let rainInches = document.querySelector('#total-precip-in');
 let maxWindSpeed = document.querySelector('#max-wind');
 
-
 //-------------------------------FUNCTION(S)---------------------------
+
+//:::::::::::::::::::::::::::::::::::::::Shows The Default City::::::::::::::::::::::::::::::::::::::::::::::::::::
+
 function defaultWeather(){
 //--------------------------START OF FETCH-------------------------------------------
 fetch(`http://api.weatherapi.com/v1/current.json?key=${apiKey}&q=Atlanta`).then(function(response){
@@ -60,7 +62,7 @@ fetch(`http://api.weatherapi.com/v1/current.json?key=${apiKey}&q=Atlanta`).then(
 
             // let iconFromAPI = '//cdn.weatherapi.com/weather/64x64/day/116.png'
             //data.current.condition.text
-            console.log(data);
+            console.log(data); //<-- For reference only
             console.log(data.current.condition.icon); //<-- For testing only
             console.log(data.current.condition.text); //<-- For testing only
             console.log(data.current.condition.code); //<-- For testing only
@@ -102,10 +104,6 @@ fetch(`http://api.weatherapi.com/v1/current.json?key=${apiKey}&q=Atlanta`).then(
             // source.setAttribute('type', 'video/mp4');
             // videoBackground.appendChild(source);
             //--------------------Backgroud Corresponding to Weather Condition----------------------
-
-
-
-
 
             let long = data.location.lon; //<-- Longitude of a Given Location
             let lat = data.location.lat; //<-- Latitude of a Given Location
@@ -180,12 +178,13 @@ fetch(`http://api.weatherapi.com/v1/current.json?key=${apiKey}&q=Atlanta`).then(
     //-------------------------------------END OF FETCH-------------------------------------
 }
 
-//::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+//:::::::::::::::::::::::::::::::::Shows what the user searched for::::::::::::::::::::::::::::::::::::::::::::::::::::::
 
 function chooseLocation() {
 
     let textInput = document.querySelector('#search-input'); //<-- dom for input from user
     let choice = textInput.value; //<-- extracted value for user input
+
     //--------------------------START OF FETCH-------------------------------------------
     fetch(`http://api.weatherapi.com/v1/current.json?key=${apiKey}&q=${choice}`).then(function(response){
         return response.json();
@@ -219,8 +218,6 @@ function chooseLocation() {
                     
                 }
                 //---------END----------Comparing Icons on Local Machine with Icons Supplied by Api-------
-
-    
                 let long = data.location.lon;
                 let lat = data.location.lat;
     
@@ -276,13 +273,15 @@ function chooseLocation() {
                 console.log(`Forecast Data is Now Available`);
                 console.log(data);
                 console.log(data.forecast.forecastday[0].day);
+
                 //NOTE: To Extract forecast data use: data.forecast.forcastday[0].day
+                let inches = (data.forecast.forecastday[0].day.totalprecip_in)*100;
 
                 forecastHigh.innerHTML = `High for the Day | ${data.forecast.forecastday[0].day.maxtemp_f}°F`;
                 forecastLow.innerHTML = `Low for the Day | ${data.forecast.forecastday[0].day.mintemp_f}°F`;
                 forecastAvg.innerHTML = `Today's Average | ${data.forecast.forecastday[0].day.avgtemp_f}°F`;
                 chanceOfRain.innerHTML = `Chance of Rain | ${data.forecast.forecastday[0].day.daily_chance_of_rain}%`;
-                rainInches.innerHTML = `Inches of Rain | ${data.forecast.forecastday[0].day.totalprecip_in} inches`;
+                rainInches.innerHTML = `Inches of Rain | ${inches} inches`;
                 maxWindSpeed.innerHTML = `Windspeed | ${data.forecast.forecastday[0].day.maxwind_mph} mph`;
 
                 
